@@ -48,3 +48,7 @@ I use [SemVer](http://semver.org/) for versioning. For the versions available, s
 - MAJOR versions in this context mean a breaking change to the external interface of the hardware like different connectors or functions.
 - MINOR versions contain changes to the hardware that only affect the inner workings of the circuit, but otherwise the performance is unaffected.
 - PATCH versions do not affect the schematics or invalidate older bill of materials. These changes may include updated components (to replace obsolete parts for example), an updated silkscreen, or fixed typos.
+
+## License
+This work is released under the CERN-OHL-W
+See [https://ohwr.org/cern_ohl_w_v2.pdf](https://ohwr.org/cern_ohl_w_v2.pdf) or the included [LICENSE](LICENSE) file for more information.
