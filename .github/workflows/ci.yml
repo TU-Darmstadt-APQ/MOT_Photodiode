@@ -173,18 +173,6 @@ jobs:
           name: manufacturing_files-gerber-${{ matrix.variant }}
           path: gerber_files_compressed
 
-      - name: Zip artifact for deployment
-        if: matrix.variant == 'default'
-        run: zip mechanical_${{ matrix.variant }}.zip ./front_plate*.pdf
-        working-directory: ./mechanical
-
-      - name: Upload mechanical files as artifact
-        if: matrix.variant == 'default'
-        uses: actions/upload-artifact@v4
-        with:
-          name: manufacturing_files-housing-${{ matrix.variant }}
-          path: mechanical/mechanical_${{ matrix.variant }}.zip
-
   release:
     name: 'Upload manufacturing files to release'
     runs-on: ubuntu-latest
@@ -238,15 +226,6 @@ jobs:
         run: |
           mv "./manufacturing_files/gerbers_(${{ matrix.variant }}).zip" ${{ needs.tests.outputs.basename }}_gerber_${{ needs.tests.outputs.revision }}_all.zip
           gh release upload ${{ github.ref_name }} ${{ needs.tests.outputs.basename }}_gerber_${{ needs.tests.outputs.revision }}_all.zip#"Gerber files for all variants (zip)" --repo ${{ github.repository }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        shell: bash
-
-      - name: Append mechanical design files as asset
-        if: github.event.action == 'published' && matrix.variant == 'default'
-        run: |
-          mv "./manufacturing_files/mechanical_${{ matrix.variant }}.zip" ${{ needs.tests.outputs.basename }}_mechanical_${{ needs.tests.outputs.revision }}_all.zip
-          gh release upload ${{ github.ref_name }} ${{ needs.tests.outputs.basename }}_mechanical_${{ needs.tests.outputs.revision }}_all.zip#"Mechanical design files for all variants (zip)" --repo ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
