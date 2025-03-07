@@ -2,8 +2,8 @@
 [![Build manufacturing files](https://github.com/TU-Darmstadt-APQ/MOT_Photodiode/actions/workflows/ci.yml/badge.svg)](https://github.com/TU-Darmstadt-APQ/MOT_Photodiode/actions/workflows/ci.yml)
 ![License: CERN-OHL-W-2.0](https://img.shields.io/github/license/TU-Darmstadt-APQ/MOT_Photodiode?color=blue)
 # MOT Photodiode
-This is a photodiode board with a transimpedance amplifier for [S-25](https://osioptoelectronics.com/products/photodetectors/solderable-chip-photodiodes/s-25cl) photodiodes used to probe the MOT beams at the QUIPS C experiment. 
-The photodiode is inserted on a slide-in unit behind the MOT Beam Doublett colimators. Which itself is mounted to a flange on the vacuum chamber (holder_offaxis/holder_onaxis designed by Lars Pause). The photodiode board can be screwed on this holder with two polymer screws. 
+This is a photodiode board with a transimpedance amplifier for [S-100](https://osioptoelectronics.com/media/pages/products/photodetectors/solderable-chip-photodiodes/s-100vl/1aa00dfa44-1675100439/solderable-chips.pdf) photodiodes used to probe the MOT beams at the QUIPS-C experiment.
+The photodiode is inserted on a slide-in unit ([slide_in_mount](photodiode_mount/slide_in_mount.ipt) in combination with [photo_plate_slide_in](photodiode_mount/photo_plate_slide_in.ipt)) which can be placed behind the MOT Beam Doublett colimators. Which itself is mounted to a flange on the vacuum chamber (viewport_mount assembly designed by Lars Pause). The photodiode board can be screwed on this holder with two polymer screws. 
 
 
 ## Contents
