@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "MOT Photodiode")
-		(date "2025-02-27")
-		(rev "1.1.0")
+		(date "2025-06-24")
+		(rev "1.1.1")
 		(company "Atoms Photons Quanta")
 		(comment 1 "and Tilman Preuschoff")
 		(comment 2 "Copyright (©) 2025, Patrick Baus <patrick.baus@physik.tu-darmstadt.de>")
