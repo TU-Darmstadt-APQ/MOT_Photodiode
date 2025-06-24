@@ -50,7 +50,6 @@ I use [SemVer](http://semver.org/) for versioning. For the versions available, s
 - MINOR versions contain changes to the hardware that only affect the inner workings of the circuit, but otherwise the performance is unaffected.
 - PATCH versions do not affect the schematics or invalidate older bill of materials. These changes may include updated components (to replace obsolete parts for example), an updated silkscreen, or fixed typos.
 
-Note: the original version by Tilman Preuschoff (2019) was only local available and not versioned on GitHub.
 ## License
 This work is released under the CERN-OHL-W
 See [https://ohwr.org/cern_ohl_w_v2.pdf](https://ohwr.org/cern_ohl_w_v2.pdf) or the included [LICENSE](LICENSE) file for more information.
