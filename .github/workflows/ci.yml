@@ -91,7 +91,7 @@ jobs:
           submodules: true
 
       - name: Run ERC
-        uses: INTI-CMNB/KiBot@v2_dk8
+        uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.KIBOT_CONFIG }}
           schema: ${{ env.SCHEMATIC_FILE }}
@@ -118,7 +118,7 @@ jobs:
           submodules: true
 
       - name: Run DRC
-        uses: INTI-CMNB/KiBot@v2_dk8
+        uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.KIBOT_CONFIG }}
           board: ${{ env.PCB_FILE }}
@@ -146,7 +146,7 @@ jobs:
         with:
           submodules: true
 
-      - uses: INTI-CMNB/KiBot@v2_dk8
+      - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.KIBOT_CONFIG }}
           schema: ${{ env.SCHEMATIC_FILE }}
