@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "MOT Photodiode")
-		(date "2025-02-27")
-		(rev "1.1.0")
+		(date "2025-06-24")
+		(rev "1.1.1")
 		(company "Atoms Photons Quanta")
 		(comment 1 "and Tilman Preuschoff")
 		(comment 2 "Copyright (©) 2025, Patrick Baus <patrick.baus@physik.tu-darmstadt.de>")
@@ -6057,7 +6057,7 @@
 			)
 		)
 	)
-	(gr_text "MOT_photodiode 1.1.1\nDesign: T. Preuschoff\nDate: 2025-02\nhttps://github.com/\nTU-Darmstadt-APQ"
+	(gr_text "MOT_photodiode 1.1.1\nDesign: T. Preuschoff\nDate: 2025-06\nhttps://github.com/\nTU-Darmstadt-APQ"
 		(at 131.25 101.25 270)
 		(layer "B.SilkS")
 		(uuid "12cb1d7f-1c5a-4156-b212-133edb1c3613")
