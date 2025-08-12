@@ -38,7 +38,7 @@ jobs:
 
     steps:
       - name: Download repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Parse repository name
         id: repo-basename
@@ -86,7 +86,7 @@ jobs:
 
     steps:
       - name: Download repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           submodules: true
 
@@ -113,7 +113,7 @@ jobs:
 
     steps:
       - name: Download repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           submodules: true
 
@@ -142,7 +142,7 @@ jobs:
         variant: [ 'default' ]
     steps:
       - name: Download repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           submodules: true
 
